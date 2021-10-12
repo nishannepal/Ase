@@ -1,0 +1,14 @@
+ from ase import Atoms
+>>> n2 = Atoms('2N', positions=[(0., 0., 0.), (0., 0., 1.10)], cell=[2, 2, 2])
+>>> n2.positions
+#array([[ 0. ,  0. ,  0. ],
+       [ 0. ,  0. ,  1.1]])
+>>> n2.numbers
+#array([7, 7])
+>>> n2.cell
+#array([[ 2.,  0.,  0.],
+       [ 0.,  2.,  0.],
+       [ 0.,  0.,  2.]])
+>>> from ase.visualize import view
+>>> view(n2)
+>>> 
