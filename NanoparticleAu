@@ -1,9 +1,9 @@
 import ase
->>> from ase.cluster.cubic import FaceCenteredCubic
->>> surfaces = [(1,0,0) , ( 1,1,0) , (1,1,1)]
->>> layers = [6,9,5]
->>> lc = 3.00000
->>> atoms = FaceCenteredCubic('Au',  surfaces, layers, latticeconstant = lc) 
->>> atoms = ase.Atoms(atoms)
->>> from ase.visualize import view
->>> view(atoms)
+from ase.cluster.cubic import FaceCenteredCubic
+surfaces = [(1,0,0) , ( 1,1,0) , (1,1,1)]
+layers = [6,9,5]
+lc = 3.00000
+atoms = FaceCenteredCubic('Au',  surfaces, layers, latticeconstant = lc) 
+atoms = ase.Atoms(atoms)
+from ase.visualize import view
+view(atoms)
